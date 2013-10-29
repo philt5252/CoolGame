@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace GameEngine
 {
@@ -13,6 +14,8 @@ namespace GameEngine
     {
         private DateTime lastTime;
         private Bitmap backBuffer;
+
+        protected InputManager inputManager = new InputManager();
 
         public GameLevel()
         {
@@ -24,6 +27,13 @@ namespace GameEngine
 
             this.Paint += Form1_Paint;
             this.Resize += Form1_CreateBackBuffer;
+
+            InitInputManagerActionKeys();
+        }
+
+        protected virtual void InitInputManagerActionKeys()
+        {
+
         }
 
         public void Start()
@@ -33,6 +43,7 @@ namespace GameEngine
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
+            inputManager.Update();
             Update(DateTime.Now - lastTime);
 
             if (backBuffer != null)

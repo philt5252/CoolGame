@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.level11 = new OtherGame.Level1();
+            this.SuspendLayout();
+            // 
+            // level11
+            // 
+            this.level11.Location = new System.Drawing.Point(12, 12);
+            this.level11.Name = "level11";
+            this.level11.Size = new System.Drawing.Size(260, 238);
+            this.level11.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.Controls.Add(this.level11);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Level1 level11;
     }
 }
 

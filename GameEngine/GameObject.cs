@@ -10,5 +10,10 @@ namespace GameEngine
     {
         public Vector2 Position { get; set; }
         public Image Image { get; set; }
+
+        protected GameObject()
+        {
+            Position = new Vector2();
+        }
     }
 }

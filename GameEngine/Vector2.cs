@@ -1,4 +1,6 @@
-﻿namespace GameEngine
+﻿
+using System.Drawing;
+namespace GameEngine
 {
     public class Vector2
     {
@@ -15,5 +17,10 @@
 
         public float X { get; set; }
         public float Y { get; set; }
+
+        public static implicit operator PointF(Vector2 vector)
+        {
+            return new PointF(vector.X, vector.Y);
+        }
     }
 }
