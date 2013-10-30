@@ -86,9 +86,7 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Koala.cs" />
-    <Compile Include="Level1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Include="Level1.cs" />
     <Compile Include="Level1.Designer.cs">
       <DependentUpon>Level1.cs</DependentUpon>
     </Compile>
