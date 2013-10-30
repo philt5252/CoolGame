@@ -16,5 +16,13 @@ namespace RobinHoodGame
         {
             InitializeComponent();
         }
+        protected override void Draw(Graphics graphics)
+        {
+            base.Draw(graphics);
+        }
+        protected override void Update(TimeSpan elapsedTime)
+        {
+            base.Update(elapsedTime);
+        }
     }
 }
