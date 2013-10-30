@@ -8,12 +8,42 @@ namespace GameEngine
 {
     public abstract class GameObject
     {
+        private Vector2 size;
+        private Image image;
+
         public Vector2 Position { get; set; }
-        public Image Image { get; set; }
+        public Vector2 Size
+        {
+            get
+            {
+                return size;
+            }
+            set
+            {
+                size = value;
+
+                if(Image != null)
+                {
+                    Image = new Bitmap(Image, new Size((int)size.X, (int)size.Y));
+                }
+            }
+        }
+        public Image Image
+        {
+            get
+            {
+                return image;
+            }
+            set
+            {
+                image = new Bitmap(value, new Size((int)Size.X, (int)Size.Y));
+            }
+        }
 
         protected GameObject()
         {
             Position = new Vector2();
+            Size = new Vector2(50, 50);
         }
     }
 }

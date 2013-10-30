@@ -3,25 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Windows.Input;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace GameEngine
 {
     public class InputManager
     {
-        private Dictionary<string, Key> keys = new Dictionary<string, Key>();
-        private Dictionary<string, KeyStates> previousStates = new Dictionary<string, KeyStates>();
-        private Dictionary<string, KeyStates> currentStates = new Dictionary<string, KeyStates>();
+        private byte[] keys = new byte[256];
+        private Dictionary<string, Keys> keyMap = new Dictionary<string, Keys>();
+        private Dictionary<string, bool> previousStates = new Dictionary<string, bool>();
+        private Dictionary<string, bool> currentStates = new Dictionary<string, bool>();
 
-        public void AddActionKey(string action, Key key)
+        public void AddActionKey(string action, Keys key)
         {
-            keys.Add(action, key);
-            previousStates[action] = KeyStates.None;
-            currentStates[action] = KeyStates.None;
+            keyMap.Add(action, key);
+            previousStates[action] = false;
+            currentStates[action] = false;
         }
 
         public bool IsActionPressed(string action)
         {
-            return currentStates[action] == KeyStates.Down;
+            return currentStates[action];
         }
 
         public bool IsActionUp(string action)
@@ -31,16 +34,27 @@ namespace GameEngine
 
         public bool IsActionJustPressed(string action)
         {
-            return IsActionPressed(action) && previousStates[action] != KeyStates.Down;
+            return IsActionPressed(action) && !previousStates[action];
         }
 
         public void Update()
         {
-            foreach (var entries in keys)
+            keys = new byte[256];
+            GetKeyboardState(keys);
+
+            foreach (var entries in keyMap)
             {
                 previousStates[entries.Key] = currentStates[entries.Key];
-                currentStates[entries.Key] = Keyboard.GetKeyStates(entries.Value);
+                currentStates[entries.Key] = IsKeyDown(entries.Value);
             }
+        }
+
+        [DllImport("user32.dll")]
+        public static extern int GetKeyboardState(byte[] keystate);
+
+        public bool IsKeyDown(Keys key)
+        {
+            return keys[(int)key] >=128;
         }
     }
 }
