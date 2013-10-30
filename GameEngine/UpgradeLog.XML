@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GameEngine">
+</Property><Property Name="Solution File" Value="C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\GameEngine.sln">
+</Property><Property Name="User Options File" Value="C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\GameEngine.suo">
+</Property><Property Name="Date" Value="Wednesday, October 30, 2013">
+</Property><Property Name="Time" Value="17:03 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="GameEngine.sln" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameEngine.sln">
+</Event><Event ErrorLevel="0" Project="" Source="GameEngine.suo" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameEngine.suo">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="GameEngine.csproj" Description="Project file successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameEngine.csproj">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="GameLevel.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameLevel.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="GameLevel.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameLevel.Designer.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="GameObject.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameObject.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="InputManager.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\InputManager.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="Vector2.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\Vector2.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="Properties\Settings.settings" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="GameLevel.resx" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\GameLevel.resx">
+</Event><Event ErrorLevel="0" Project="GameEngine" Source="GameEngine.csproj" Description="The project file does not require conversion.">
+</Event><Event ErrorLevel="3" Project="GameEngine" Source="GameEngine.csproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="1" Project="RobinHoodGame" Source="..\RobinHoodGame\RobinHoodGame.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\RobinHoodGame.csproj" Description="Project file successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\RobinHoodGame.csproj">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Form1.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Form1.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Form1.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Level1.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Level1.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Level1.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Level1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Program.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Program.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Properties\Settings.settings" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Level1.resx" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Level1.resx">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\Properties\Resources.resx" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\RobinHoodGame\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\RobinHoodGame.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="RobinHoodGame" Source="..\RobinHoodGame\RobinHoodGame.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="OtherGame" Source="..\OtherGame\OtherGame.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\OtherGame.csproj" Description="Project file successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\OtherGame.csproj">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Form1.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Form1.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Form1.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Koala.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Koala.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Level1.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Level1.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Level1.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Level1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Program.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Program.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Properties\Settings.settings" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Resources\Koala.jpg" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Resources\Koala.jpg">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Form1.resx" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Form1.resx">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Level1.resx" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Level1.resx">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\Properties\Resources.resx" Description="File successfully backed up as C:\Users\Phil\Documents\GitHub\CoolGame\GameEngine\Backup\OtherGame\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\OtherGame.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="OtherGame" Source="..\OtherGame\OtherGame.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="GameEngine.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="GameEngine.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="RobinHoodGame" Source="..\RobinHoodGame\RobinHoodGame.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="OtherGame" Source="..\OtherGame\OtherGame.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

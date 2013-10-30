@@ -24,7 +24,14 @@ namespace GameEngine
 
         public bool IsActionPressed(string action)
         {
-            return currentStates[action];
+            try
+            {
+                return currentStates[action];
+            }
+            catch (KeyNotFoundException ex)
+            {
+                throw new KeyNotFoundException(string.Format("No action '{0}' was registered in the InputManager!", action));
+            }
         }
 
         public bool IsActionUp(string action)

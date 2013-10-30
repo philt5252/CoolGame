@@ -33,16 +33,17 @@
             // 
             // level11
             // 
-            this.level11.Location = new System.Drawing.Point(12, 12);
+            this.level11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.level11.Location = new System.Drawing.Point(0, 0);
             this.level11.Name = "level11";
-            this.level11.Size = new System.Drawing.Size(260, 238);
+            this.level11.Size = new System.Drawing.Size(920, 441);
             this.level11.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
+            this.ClientSize = new System.Drawing.Size(920, 441);
             this.Controls.Add(this.level11);
             this.Name = "Form1";
             this.Text = "Form1";

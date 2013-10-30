@@ -7,7 +7,7 @@ using OtherGame.Properties;
 
 namespace OtherGame
 {
-    public class Koala : GameObject
+    public class Koala : MoveableGameObject
     {
         public Koala()
         {
