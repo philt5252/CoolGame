@@ -27,6 +27,11 @@ namespace OtherGame
             {
                 koala.Position.X += 2;
             }
+
+            if (inputManager.IsActionPressed("Left"))
+            {
+                koala.Position.X -= 2;
+            }
         }
 
         protected override void Draw(Graphics graphics)
@@ -40,7 +45,8 @@ namespace OtherGame
         {
             base.InitInputManagerActionKeys();
 
-            inputManager.AddActionKey("Right", Key.D);
+            inputManager.AddActionKey("Right", Keys.Right);
+            inputManager.AddActionKey("Left", Keys.Left);
         }
     }
 }
