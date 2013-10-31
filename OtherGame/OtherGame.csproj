@@ -79,6 +79,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ball.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,7 +87,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Koala.cs" />
-    <Compile Include="Level1.cs" />
+    <Compile Include="Level1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Level1.Designer.cs">
       <DependentUpon>Level1.cs</DependentUpon>
     </Compile>
@@ -126,6 +129,45 @@
       <Project>{852CB4FD-E62B-47E7-B02F-18CDB39956C8}</Project>
       <Name>GameEngine</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_mad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_mad2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_mad3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_mad4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_mad5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ball_mad6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

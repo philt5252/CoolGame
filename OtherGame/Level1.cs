@@ -14,52 +14,74 @@ namespace OtherGame
 {
     public partial class Level1 : GameLevel
     {
-        Koala koala = new Koala();
+        Ball ball = new Ball();
         public Level1()
         {
             InitializeComponent();
-            koala.Velocity.X = 4;
+            ball.Velocity.X = 4;
+            ball.CurrentAnimation = "Idle";
         }
 
         protected override void Update(TimeSpan elapsedTime)
         {
             base.Update(elapsedTime);
 
+            bool moved = false;
+
             if (inputManager.IsActionPressed("Right"))
             {
-                koala.Velocity.X += 0.02f;
+                ball.Velocity.X += 0.02f;
+                moved = true;
             }
 
             if (inputManager.IsActionPressed("Left"))
             {
-                koala.Velocity.X += -0.02f;
+                ball.Velocity.X += -0.02f;
+                moved = true;
             }
 
             if (inputManager.IsActionPressed("Up"))
             {
-                koala.Velocity.Y += -0.02f;
+                ball.Velocity.Y += -0.02f;
+                moved = true;
             }
 
             if (inputManager.IsActionPressed("Down"))
             {
-                koala.Velocity.Y += 0.02f;
+                ball.Velocity.Y += 0.02f;
+                moved = true;
             }
 
-            koala.Velocity.X *= 0.99f;
-            koala.Velocity.Y *= 0.99f;
+            if (inputManager.IsActionJustPressed("Pulse"))
+            {
+                if (ball.CurrentAnimation == "Pulse")
+                    ball.CurrentAnimation = "Idle";
+                else
+                    ball.CurrentAnimation = "Pulse";
+            }
 
-            koala.Velocity.X = (float)Math.Round(koala.Velocity.X, 3);
-            koala.Velocity.Y =(float) Math.Round(koala.Velocity.Y, 3);
+            if (!moved)
+            {
+                ball.Velocity.X *= 0.95f;
+                ball.Velocity.Y *= 0.95f;
 
-            koala.UpdatePositionFromVelocity(elapsedTime);
+                if (Math.Abs(ball.Velocity.X) < 0.01f)
+                    ball.Velocity.X = 0;
+
+                if ((Math.Abs(ball.Velocity.Y)) < 0.01f)
+                    ball.Velocity.Y = 0;
+            }
+            
+
+            ball.Update(elapsedTime);
         }
 
         protected override void Draw(Graphics graphics)
         {
             base.Draw(graphics);
 
-            graphics.DrawImage(koala.Image, koala.Position);
-            graphics.DrawString("Velocity: " + koala.Velocity.ToString(), 
+            ball.Draw(graphics);
+            graphics.DrawString("Velocity: " + ball.Velocity.ToString(), 
                 new Font(new FontFamily(GenericFontFamilies.Monospace), 8.5f),
                 new SolidBrush(Color.Black), 10,10 );
         }
@@ -72,6 +94,7 @@ namespace OtherGame
             inputManager.AddActionKey("Left", Keys.Left);
             inputManager.AddActionKey("Up", Keys.Up);
             inputManager.AddActionKey("Down", Keys.Down);
+            inputManager.AddActionKey("Pulse", Keys.Space);
         }
     }
 }

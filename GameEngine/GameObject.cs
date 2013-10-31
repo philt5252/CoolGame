@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Drawing;
@@ -44,21 +43,6 @@ namespace GameEngine
         {
             Position = new Vector2();
             Size = new Vector2(50, 50);
-        }
-    }
-
-    public class MoveableGameObject : GameObject
-    {
-        public Vector2 Velocity { get; set; }
-
-        public MoveableGameObject()
-        {
-            Velocity = Vector2.Zero;
-        }
-
-        public virtual void UpdatePositionFromVelocity(TimeSpan elapsedTime)
-        {
-            Position += Velocity;
         }
     }
 }
